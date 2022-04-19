@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SignUpOrSignInActivity">
+
+    <ImageView
+        android:id="@+id/imageBG"
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:background="@drawable/shape_rectangle_blue"/>
+
+    <ImageView
+        android:id="@+id/splashCircle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/shape_circle_light_yellow" />
+
+    <ImageView
+        android:id="@+id/splashLogoName"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="230dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome to \nAppointment"
+        android:textColor="@color/purple_700"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/helloTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashCircle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="We always provide healthy to you!"
+        android:textColor="#3E3A3A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-medium" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageBG"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_curve_button"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#563E3E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_curve_button"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#563E3E"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
